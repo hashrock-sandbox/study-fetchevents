@@ -7,9 +7,9 @@ addEventListener("fetch", (event) => {
     JSON.stringify(event.request.headers),
   );
   console.log("hello.js start");
-  console.debug("level debug");
-  console.info("level info");
-//   console.warning("level warning");
+//   console.debug("level debug");
+//   console.info("level info");
+//   console.warn("level warning");
   
   event.respondWith(
     new Response("Hello world", {
