@@ -9,7 +9,7 @@ addEventListener("fetch", (event) => {
   console.log("hello.js start");
 //   console.debug("level debug");
 //   console.info("level info");
-//   console.warn("level warning");
+  console.warn("level warning");
   
   event.respondWith(
     new Response("Hello world", {
