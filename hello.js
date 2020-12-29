@@ -1,4 +1,8 @@
 console.log("hello.js start");
+console.debug("level debug");
+console.info("level info");
+console.warning("level warning");
+console.error("level error");
 
 addEventListener("fetch", (event) => {
   console.log("hello_world.js got request url", event.request.url);
@@ -7,10 +11,6 @@ addEventListener("fetch", (event) => {
     "hello_world.js got request headers",
     JSON.stringify(event.request.headers),
   );
-  console.debug("level debug");
-  console.info("level info");
-  console.warning("level warning");
-  console.error("level error");
   event.respondWith(
     new Response("Hello world", {
       status: 200,
